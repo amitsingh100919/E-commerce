@@ -35,33 +35,38 @@ function copy()
 
         <div class="form-group">
             <label for="name">Name</label>
+            <form:input path="customerName" id="name" type="text" class="form-control" placeholder="Name"/>
             <form:errors path="customerName" cssStyle="color: #ff0000" />
-            <form:input path="customerName" id="name" class="form-Control" />
+            
         </div>
 
         <div class="form-group ">
             <label for="email">Email</label>
+            <form:input path="customerEmail" id="email" type="text" class="form-control" placeholder="Email"/>
             <span style="color: #ff0000">${emailMsg}</span>
             <form:errors path="customerEmail" cssStyle="color: #ff0000" />
-            <form:input path="customerEmail" id="email" class="form-Control" />
+            
         </div>
 
         <div class="form-group">
             <label for="phone">Phone</label>
-            <form:input path="customerPhone" id="phone" class="form-Control" />
+            <form:input path="customerPhone" id="phone" type="text" class="form-control" placeholder="Phone"/>
+            
         </div>
 
         <div class="form-group">
             <label for="username">Username</label>
+            <form:input path="username" id="username"  type="text" class="form-control" placeholder="Username"/>
             <span style="color: #ff0000">${usernameMsg}</span>
             <form:errors path="username" cssStyle="color: #ff0000" />
-            <form:input path="username" id="username" class="form-Control" />
+            <class="form-Control" />
         </div>
 
         <div class="form-group">
             <label for="password">Password</label>
+            <form:input path="password" id="password"  type="text" class="form-control" placeholder="Password"/>
             <form:errors path="password" cssStyle="color: #ff0000" />
-            <form:password path="password" id="password" class="form-Control" />
+            
         </div>
 
 
@@ -71,32 +76,39 @@ function copy()
 
         <div class="form-group">
             <label for="billingStreet">Street Name</label>
-            <form:input path="billingAddress.streetName" id="billingStreet" class="form-Control" />
+            <form:input path="billingAddress.streetName" id="billingStreet" type="text" class="form-control" placeholder="Street Name"/>
+            
+            
         </div>
 
         <div class="form-group">
             <label for="billingApartmentNumber">Apartment Number</label>
-            <form:input path="billingAddress.apartmentNumber" id="billingApartmentNumber" class="form-Control" />
+            <form:input path="billingAddress.apartmentNumber" id="billingApartmentNumber" type="text" class="form-control" placeholder="Apartment Number"/>
+           
         </div>
 
         <div class="form-group">
             <label for="billingCity">City</label>
-            <form:input path="billingAddress.city" id="billingCity" class="form-Control" />
+            <form:input path="billingAddress.city" id="billingCity" type="text" class="form-control" placeholder="City"/>
+           
         </div>
 
         <div class="form-group">
             <label for="billingState">State</label>
-            <form:input path="billingAddress.state" id="billingState" class="form-Control" />
+            <form:input path="billingAddress.state" id="billingState" type="text" class="form-control" placeholder="State"/>
+            
         </div>
 
         <div class="form-group">
             <label for="billingCountry">Country</label>
-            <form:input path="billingAddress.country" id="billingCountry" class="form-Control" />
+            <form:input path="billingAddress.country" id="billingCountry" type="text" class="form-control" placeholder="Country"/>
+            
         </div>
 
         <div class="form-group">
             <label for="billingZip">Zipcode</label>
-            <form:input path="billingAddress.zipCode" id="billingZip" class="form-Control" />
+            <form:input path="billingAddress.zipCode" id="billingZip" type="text" class="form-control" placeholder="Zipcode"/>
+            
         </div>
 
         <br/>

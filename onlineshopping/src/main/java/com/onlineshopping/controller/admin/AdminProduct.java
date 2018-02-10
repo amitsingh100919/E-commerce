@@ -57,6 +57,7 @@ public class AdminProduct {
         if(productImage != null && !productImage.isEmpty()){
             try {
                 productImage.transferTo(new File(path.toString()));
+               
             } catch (Exception ex){
                 ex.printStackTrace();
                 throw new RuntimeException("Product image saving failed", ex);
