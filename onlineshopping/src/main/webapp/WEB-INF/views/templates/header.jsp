@@ -113,6 +113,8 @@ color:red;
 		</div>
 	</div>
 	<!-- //header -->
+	
+
 	<!-- navigation -->
 	<div id="navbar" class="navbar-inverse navbar-collapse collapse" style="background:#333333;">
 		<ul class="nav navbar-nav">
@@ -138,7 +140,7 @@ color:red;
 					<li><a href="<c:url value="/admin/productInventory" /> ">Manage Product</a></li>
 				</c:if>
 				<li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-				<li><a href="${pageContext.request.contextPath}/logout">Logout</a></li>
+				<li><a href="<c:url value="/login?logout" />">Logout</a></li>
 			</c:if>
 
 			<c:if test="${pageContext.request.userPrincipal.name == null}">

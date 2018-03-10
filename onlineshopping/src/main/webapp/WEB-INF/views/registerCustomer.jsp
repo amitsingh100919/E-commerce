@@ -42,7 +42,7 @@ function copy()
 
         <div class="form-group ">
             <label for="email">Email</label>
-            <form:input path="customerEmail" id="email" type="text" class="form-control" placeholder="Email"/>
+            <form:input path="customerEmail" id="email" type="email" class="form-control" placeholder="Email"/>
             <span style="color: #ff0000">${emailMsg}</span>
             <form:errors path="customerEmail" cssStyle="color: #ff0000" />
             
@@ -50,7 +50,7 @@ function copy()
 
         <div class="form-group">
             <label for="phone">Phone</label>
-            <form:input path="customerPhone" id="phone" type="text" class="form-control" placeholder="Phone"/>
+            <form:input path="customerPhone" id="phone" type="text" class="form-control" placeholder="Phone" pattern="[789]\d{9}"/>
             
         </div>
 
@@ -64,7 +64,7 @@ function copy()
 
         <div class="form-group">
             <label for="password">Password</label>
-            <form:input path="password" id="password"  type="text" class="form-control" placeholder="Password"/>
+            <form:input path="password" id="password"  type="password" class="form-control" placeholder="Password"/>
             <form:errors path="password" cssStyle="color: #ff0000" />
             
         </div>
