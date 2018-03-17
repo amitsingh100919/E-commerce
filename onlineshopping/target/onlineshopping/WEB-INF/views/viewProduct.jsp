@@ -41,8 +41,18 @@ a:link {
 
                     <p ng-controller="cartCtrl">
                         <a href="<c:url value = "${url}" />" class="btn btn-default">Back</a>
+                        <c:if test="${userrole == '[ROLE_ANONYMOUS]'}">
+                        <a href="${pageContext.request.contextPath}/customer/#" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span class="glyphicon glyphicon-shopping-cart"></span> Order Now</a>
+                        <a href="<spring:url value="/customer/cart" />" class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span> View Cart</a>
+                        </c:if>
+                        
+                        <c:if test="${userrole == '[ROLE_USER]'}">
                         <a href="#" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span class="glyphicon glyphicon-shopping-cart"></span> Order Now</a>
                         <a href="<spring:url value="/customer/cart" />" class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span> View Cart</a>
+                    </c:if>
+                    <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
+                    <a style="color:blue" href="<spring:url value="/admin/product/editProduct/${product.productId}" />"><span class="glyphicon glyphicon-info-sign"></span>Edit</a>
+                    </c:if>
                     </p>
 
                 </div>

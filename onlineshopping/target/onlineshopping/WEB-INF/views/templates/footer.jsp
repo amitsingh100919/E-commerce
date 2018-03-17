@@ -4,11 +4,10 @@
 			<div class="w3_footer_grids">
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Contact</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>Lucknow City.</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">amit.amit.singh97@gmail.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>9417808375</li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
@@ -19,16 +18,7 @@
 						
 					</ul>
 				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
-					<ul class="info"> 
-						<li><a href="products">Mobiles</a></li>
-						<li><a href="products1">Laptops</a></li>
-						<li><a href="products">Purifiers</a></li>
-						<li><a href="products1">Wearables</a></li>
-						<li><a href="products2">Kitchen</a></li>
-					</ul>
-				</div>
+				
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info"> 
@@ -38,8 +28,8 @@
 					<h4>Follow Us</h4>
 					<div class="agileits_social_button">
 						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
+							<li><a href=https://www.facebook.com/ class="facebook"> </a></li>
+							<li><a href=https://twitter.com/ class="twitter"> </a></li>
 							<li><a href="#" class="google"> </a></li>
 							<li><a href="#" class="pinterest"> </a></li>
 						</ul>

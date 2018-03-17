@@ -23,6 +23,14 @@ response.setDateHeader("Expires",0);%>
 <meta name="keywords"
 	content="Electronic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+
+<style>
+body { margin-top:20px; }
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+</style>
 <style type="text/css">
 a:link{
 color:white;
@@ -82,6 +90,7 @@ color:red;
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
+		
 		$(".scroll").click(function(event) {
 			event.preventDefault();
 			$('html,body').animate({
@@ -89,10 +98,17 @@ color:red;
 			}, 1000);
 		});
 	});
+	
 </script>
+
 <!-- //end-smooth-scrolling -->
 </head>
 <body>
+<%        
+    response.setHeader("Pragma", "No-cache");
+    response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    response.setDateHeader("Expires", -1);
+%>
 	<!-- for bootstrap working -->
 	<script type="text/javascript" src="${js}/bootstrap-3.1.1.min.js"></script>
 	<!-- //for bootstrap working -->
@@ -128,7 +144,8 @@ color:red;
 		</c:if>
 			<c:if test="${pageContext.request.userPrincipal.name != null}">
 				
-				
+				<li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
+				<li><a href="<c:url value="/login?logout" />">Logout</a></li>
 
 				<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
 				
@@ -139,8 +156,7 @@ color:red;
 				<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
 					<li><a href="<c:url value="/admin/productInventory" /> ">Manage Product</a></li>
 				</c:if>
-				<li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-				<li><a href="<c:url value="/login?logout" />">Logout</a></li>
+				
 			</c:if>
 
 			<c:if test="${pageContext.request.userPrincipal.name == null}">

@@ -2,7 +2,9 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
-	
+<% response.setHeader("cache-control","no-cache");
+response.setHeader("Pragma","no-cache");
+response.setDateHeader("Expires",0);%>
 
 
 
@@ -111,20 +113,22 @@ color:red;
 		</div>
 	</div>
 	<!-- //header -->
+	
+
 	<!-- navigation -->
 	<div id="navbar" class="navbar-inverse navbar-collapse collapse" style="background:#333333;">
 		<ul class="nav navbar-nav">
 		<li><a href="<c:url value="/" />">HOME</a></li>
 			<li><a href="<c:url value="/product/productList/all" />">All Products</a></li>
-			<li><a href="<c:url value="/about" />">About Us</a></li>
 			<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
+			<li><a href="<c:url value="/about" />">About Us</a></li>
+			
 			<li><a href="<c:url value="/contact" />">Contact Us</a></li>
 			<li><a href="<c:url value="/help" />">Help</a></li>
 		</c:if>
 			<c:if test="${pageContext.request.userPrincipal.name != null}">
 				
-				<li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-				<li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+				
 
 				<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
 				
@@ -133,9 +137,10 @@ color:red;
 				</c:if>
 
 				<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
-					<li><a href="<c:url value="/admin" />">Admin</a></li>
+					<li><a href="<c:url value="/admin/productInventory" /> ">Manage Product</a></li>
 				</c:if>
-
+				<li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
+				<li><a href="<c:url value="/login?logout" />">Logout</a></li>
 			</c:if>
 
 			<c:if test="${pageContext.request.userPrincipal.name == null}">

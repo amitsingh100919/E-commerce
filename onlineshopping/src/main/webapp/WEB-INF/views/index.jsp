@@ -46,7 +46,7 @@
 
 			<div class="agile_ecommerce_tabs">
 
-				<c:forEach items="${products}" var="product" begin="1" end="6">
+				<c:forEach items="${products}" var="product" begin="0" end="5">
 
 
 					<div class="col-md-4 agile_ecommerce_tab_left">
@@ -64,11 +64,12 @@
 												class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 										</li>
 									</ul>
-
+									
 								</div>
-
+									<div>${product.productName}</div>
+									<div>${product.productPrice}INR</div>
 							</div>
-							<div>${product.productPrice}INR</div>
+							
 						</div>
 					</div>
 

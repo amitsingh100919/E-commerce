@@ -10,15 +10,15 @@
 		
          			  <div  class="modal-dialog"  >
       <div class="modal-content">
-          <div class="modal-body">
+          <div class="modal-body"style="background-color:">
               <div class="row">
-                  <div class="col-xs-8">
+                  <div class="col-xs-8"style="width:600px">
                       <div class="well">	
                          <c:if test="${not empty msg}">
                 <div class="msg">${msg}</div>
             </c:if>
            
-            <form name="loginForm" action="<c:url value="/j_spring_security_check" />" method="post">
+            <form name="loginForm" action="<c:url value='/login' />" method="post">
                 <c:if test="${not empty error}">
                     <div class="error" style="color: #ff0000;">${error}</div>
                 </c:if>
@@ -30,12 +30,13 @@
                     <label for="password">Passwrod:</label>
                     <input type="password" id="password" class="form-control" name="password" class="form-control" placeholder="password"/>
                 </div>
-                <div >
+                <div>
                 <input type="submit" value="SignIn" class="btn btn-default">
-                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                 <span style="float:right;">Remember me</span><input type="checkbox" style="float:right;"/>
-                 
-                
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+                 <label class="checkbox pull-right">
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
                 </div>
           </form>
             </div></div></div>

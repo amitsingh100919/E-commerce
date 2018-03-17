@@ -16,8 +16,11 @@
                 <td><h1> Images</h1></td>
                 <th>Product Name</th>
                 <th>Product Category</th>
+                <th>Product Description</th>
+                <th>Product Manufaturer</th>
                 <th>Product Condition</th>
                 <th>Product Price</th>
+                <th>Unit Stock</th>
                 <th>Action</th>
             </tr>
             </thead> 
@@ -27,8 +30,11 @@
    
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
+                    <td>${product.productDescription}</td>
+                    <td>${product.productManufacturer}</td>
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} INR </td>
+                    <td>${product.unitInStock}</td>
                     <td>
                         <a style="color:blue" href="<spring:url value="/product/viewProduct/${product.productId}" />"><span class="glyphicon glyphicon-info-sign"></span>View</a>
                         <a style="color:blue" href="<spring:url value="/admin/product/deleteProduct/${product.productId}" />"><span class="glyphicon glyphicon-trash"></span>Delete</a>

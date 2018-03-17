@@ -23,13 +23,13 @@
 					<h3>Profile</h3>
 					<ul class="info"> 
 						<li><a href="index">Home</a></li>
-						<li><a href="products">Today's Deals</a></li>
+						<li><a href="product//productList/all">Today's Deals</a></li>
 					</ul>
 					<h4>Follow Us</h4>
 					<div class="agileits_social_button">
 						<ul>
-							<li><a href=https://www.facebook.com/ class="facebook"> </a></li>
-							<li><a href=https://twitter.com/ class="twitter"> </a></li>
+							<li><a href="https://www.facebook.com/" class="facebook"> </a></li>
+							<li><a href="https://twitter.com/" class="twitter"> </a></li>
 							<li><a href="#" class="google"> </a></li>
 							<li><a href="#" class="pinterest"> </a></li>
 						</ul>

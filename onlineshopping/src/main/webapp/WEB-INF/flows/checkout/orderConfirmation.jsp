@@ -87,15 +87,16 @@
                                 </tbody>
                             </table>
                         </div>
-
-
+						
+                         
+                         <input type="radio"  disabled="disabled" checked="checked"> through card<br>
                         <input type="hidden" name="_flowExecutionKey" />
 
                         <br/><br/>
-
+						
                         <button class="btn btn-default" name="_eventId_backToCollectShippingDetail">Back</button>
 
-                        <input type="submit" value="Submit Order" class="btn btn-default" name="_eventId_orderConfirmed" />
+                        <input type="submit" value="Submit Order" class="btn btn-default" name="_eventId_orderPayment" />
 
                         <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
                     </div>
